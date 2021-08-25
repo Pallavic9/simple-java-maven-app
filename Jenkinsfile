@@ -8,7 +8,7 @@ pipeline {
     stage('Cloning Git') {
       steps {
                 checkout scm
-                git([url: 'git@github.com:Pallavic9/simple-java-maven-app.git', branch: 'master', credentialsId: 'git_key'])
+                git([url: 'git@github.com:Pallavic9/simple-java-maven-app.git', branch: 'master', credentialsId: 'master-key'])
 
 
       }
