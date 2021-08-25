@@ -13,6 +13,14 @@ pipeline {
 
       }
     }
+    stage('Building Maven project') {
+      steps{
+        steps {
+        
+          sh 'mvn clean install'
+        }
+      }
+    }
     stage('Building image') {
       steps{
         script {
