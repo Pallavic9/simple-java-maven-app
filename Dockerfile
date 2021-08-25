@@ -1,4 +1,4 @@
-FROM ubuntu:alpine
+FROM ubuntu
 
 COPY . .
 ENTRYPOINT [/jenkins/scripts/deliver.sh]
